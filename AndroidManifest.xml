@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ApkEditor.pro">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
+    
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <application 
+        android:label="File Manager Pro"
+        android:icon="@mipmap/ic_launcher_new"
+        android:roundIcon="@mipmap/ic_launcher_new"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <!-- Main Launcher -->
+        <activity 
+            android:name=".MainActivity" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- All Activities -->
+        <activity android:name=".ImageViewerActivity" android:exported="true"/>
+        <activity android:name=".FileViewerActivity" android:exported="true"/>
+        <activity android:name=".ApkDecompilerActivity" android:exported="true"/>
+        <activity android:name=".ApkCompilerActivity" android:exported="true"/>
+        <activity android:name=".ArchiveManagerActivity" android:exported="true"/>
+<activity android:name=".ApkCompilerActivity" />
+
+    </application>
+</manifest>
